@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Title</title>
+        <style type="text/css">
+            @page {
+                size: a4 landscape;
+                background-image: url('http://i67.tinypic.com/2h4jq7m.jpg');
+                
+            }
+            .container {
+              position: relative;
+              text-align: center;
+              color: white;
+            }
+
+            /* Centered text */
+            .centered {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: black;
+              font-size: 25px;
+            }
+            .cente{
+              position: absolute;
+              color: black;
+              font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+<!--           <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/47/51/785858c993217ce.jpg" alt="Snow" style="width:100%;"> -->
+          <div class="centered">
+            <p style="padding-top: 350px;">{{name}}<p>
+            <p style="padding-top: 0px; padding-left: 100px;">{{branch}}</p>
+
+          </div>
+          
+        </div>
+          <!-- <div class="cente">
+            <p style="padding-left: 465px;">30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</p>    
+          </div> -->
+    </body>
+</html>
